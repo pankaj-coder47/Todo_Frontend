@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    text-align: center;
+    background-color: rgb(15, 29, 26);
+    padding: 2.5em 2.5em;
+    color: aliceblue;
+    border-radius: 10px;
+}
