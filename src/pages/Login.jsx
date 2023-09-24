@@ -23,7 +23,7 @@ const Login = () => {
       setIsAuthenticated(true)
       setLoading(false)
     } catch (error) {
-      toast.error(error.response.data.massage)
+      toast.error('Failed to login try again')
       setIsAuthenticated(false)
       setLoading(false)
     }
