@@ -4,10 +4,10 @@ import Header from "./components/Header";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
-import toast, { Toaster } from "react-hot-toast";
 import { useContext, useEffect } from "react";
 import axios from "axios";
 import { Content, server } from "./main";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const { setUser, setIsAuthenticated, setLoading } = useContext(Content);
@@ -22,8 +22,7 @@ const App = () => {
         setUser(res.data.user);
         setLoading(false)
       })
-      .catch((err) => {
-        toast.error(err.message);
+      .catch(() => {
         setUser(null);
         setIsAuthenticated(false);
         setLoading(false)
