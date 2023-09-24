@@ -66,10 +66,7 @@ const Home = () => {
       toast.error(error.response.data.message)
     }
   }
- // check if empty
-  if(title || descripation === ""){
-    setLoding(true)
-  }
+
 
   useEffect(() => {
     axios.get(`${server}/task/alltask`, {
