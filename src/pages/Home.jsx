@@ -67,7 +67,7 @@ const Home = () => {
     }
   }
  // check if empty
-  if(title && descripation === ""){
+  if(title || descripation === ""){
     setLoding(true)
   }
 
